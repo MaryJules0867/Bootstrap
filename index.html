@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<script src="buscar.js"></script>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+</head>
+
+<body  class="bg-dark" onload="buscar()">
+  
+  <!-- 
+      Para probar diferentes elementos, podemos visitar la pagina de Bootstrap y revisar la Documentación
+    -->
+
+  <div class="container">
+
+   <!-- Aqui va el contenido de la pagina-->   
+
+   
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="#">Bahia Cinema</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="#">La Ciudad</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="#">Festival</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Agenda</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Teatro Municipal</a></li>
+        <li><a class="dropdown-item" href="#">Casa Coleman</a></li>
+        <li><a class="dropdown-item" href="#">Juanita Primera</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Ferias</a></li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link  active" href="#">Novedades</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled">Disabled</a>
+    </li>
+  </ul>
+
+   <!-- Imagenes Bahia Blanca--> 
+   <div id="carouselbahia" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/bahia1.png" class="d-block w-100" alt="Teatro Municipal">
+      </div>
+      <div class="carousel-item">
+        <img src="img/bahia2.png" class="d-block w-100" alt="Plaza Rivadavia">
+      </div>
+      <div class="carousel-item">
+        <img src="img/bahia3.png" class="d-block w-100" alt="Club Argentino">
+      </div>
+      <div class="carousel-item">
+        <img src="img/bahia4.png" class="d-block w-100" alt="Estación de tren">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselbahia" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselbahia" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+  <div class="alert alert-light" role="alert">
+    Alerta de nuevas películas!
+  </div>
+  <br>
+  <!-- Posters Peliculas--> 
+
+  <!--http://www.omdbapi.com/?apikey="+key+"&t="+titulo;-->
+  <!-- Omdb APi key  e6881c1 -->
+  <div class="card-group">
+    <div class="card">
+      <img src="" id="img1" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> <span id="genero1"></span></h5>
+        <p class="card-text"><span id="plot1"></p>
+        <p class="card-text"><small class="text-body-secondary"><span id="actors1"></small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="" id="img2" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> <span id="genero2"></h5>
+        <p class="card-text"><span id="plot2"></p>
+        <p class="card-text"><small class="text-body-secondary"><span id="actors2"></small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="" id="img3" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> <span id="genero3"></h5>
+        <p class="card-text"><span id="plot3"></p>
+        <p class="card-text"><small class="text-body-secondary"><span id="actors3"></small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="" id="img4" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> <span id="genero4"></h5>
+        <p class="card-text"><span id="plot4"></span></p>
+        <p class="card-text"><small class="text-body-secondary"><span id="actors4"></small></p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  </div>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- Popper.js, then Bootstrap JS -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
